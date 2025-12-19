@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Tests Suite" verbose="2" parallel="false">
+    <test name="Wikipedia Web Tests">
+        <classes>
+            <class name="com.skillbox.tests.web.tests.WikipediaWebTest">
+                <methods>
+                    <include name="testWikipediaHomePageLoads"/>
+                    <include name="testSearchArticle"/>
+                    <include name="testOpenArticleFromSearchResults"/>
+                    <include name="testSwitchToRussianLanguage"/>
+                    <include name="testMultipleSearches"/>
+                    <include name="testArticleHasInfoBox"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
